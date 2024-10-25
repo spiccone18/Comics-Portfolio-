@@ -1,0 +1,277 @@
+/* Generic Body Styles */
+body {
+    font-family: 'Comic Neue', sans-serif;
+    margin: 0%;
+}
+
+/* Header Section */
+header.content {
+    background-image: url('marvel-comic-book-background-0exuprkk5cwj6ail.jpg');
+    background-size: cover; /* Cover entire header */
+    background-position: center; /* Center the background */
+    color: white; /* Text color for contrast */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around the header */
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Position it at the very top */
+    left: 0; /* Position it to the left */
+    right: 0; /* Extend it to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+    height: 90px;
+}
+
+header h1 {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white; /* White text for contrast */
+    display: inline-block; /* Ensure the background only covers the text width */
+    padding: 10px 20px; /* Add padding around the text */
+    border-radius: 10px; /* Optional: Rounded corners for a smoother look */
+    margin: 0 auto; /* Center it horizontally */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for nav */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    width: 100%;
+    position: fixed;
+    top: 80px; /* Position it below the header */
+    left: 0; /* Position it to the left */
+    right: 0; /* Extend it to the right */
+    z-index: 999; /* Ensure it stays above other content */
+}
+
+/* Navigation List Styles */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Align items in a row */
+    justify-content: space-around; /* Evenly space items */
+}
+
+nav ul li {
+    display: inline; /* Ensure items are inline */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text for contrast */
+    font-size: 1.2em; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 15px; /* Space around the text */
+    display: block; /* Make the link area larger */
+}
+
+nav ul li a a:hover {
+    color:blue
+}
+
+.nav-items a:hover {
+    color: blue; 
+  }
+
+/* About Section */
+.About {
+    padding-top: 70px;
+}
+section.About {
+    align-items: center; /* Vertically align the items in the center */
+    padding: 20px; /* Add padding to the entire section for spacing */
+    padding-top: 65px;
+    border: 8px solid #000;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #FF5733, 8px 8px 0px #0066FF; /* Comic-style shadow effect */
+    padding: 40px;
+    background-color: lightgray;
+    margin-top: 30px;
+}
+
+h1 {
+text-align: center;
+}
+
+/* About Text */
+.About p {
+    width: 100%; /* Make the paragraph take up full width */
+    font-size: 1.2em; /* Optional: Adjust the font size */
+    text-align: center;
+}
+
+/* Comics Section */
+.Comics {
+    display: flex;
+    justify-content: space-around; /* Space out items evenly */
+    align-items: center; /* Align items vertically center */
+    padding: 10px;
+}
+
+.Comics .comic-item {
+    flex: 1; /* Allow each item to take equal space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Comics .comic-item img {
+    width: 100%; /* Make images take full width of container */
+    max-width: 300px; /* Set a max width so images are not too large */
+    height: auto; /* Ensure images maintain their aspect ratio */
+    border: 8px solid #000;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #FF5733, 8px 8px 0px #0066FF; /* Comic-style shadow effect */
+    background-color: lightgray;
+}
+
+.Comics .comic-item,
+.Comics .Comic-generator {
+    flex-basis: 30%; /* Ensures each item takes up roughly equal space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Comics .Comic-generator {
+    text-align: center; /* Center the generator */
+}
+
+.Comics .Comic-generator h2 {
+    font-family: 'BatmanForeverAlternate', sans-serif;                                           
+}
+
+.comic-item, .Comic-generator {
+    flex: 1;                       /* Makes each item take up equal space */
+    text-align: center;            /* Centers the content within each item */
+}
+
+#comicContainer {
+    border: 8px solid #000;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #FF5733, 8px 8px 0px #0066FF; /* Comic-style shadow effect */
+    overflow: hidden;
+   max-width: 400px;
+}
+
+#comicImage {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+#generateComic {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    width: 200px;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #4caf50, #a8e063); /* Metallic gradient */
+    box-shadow: 5px 5px 15px #888888, -5px -5px 15px #ffffff; /* 3D raised effect */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 15px;
+  }
+
+  #generateComic:hover {
+    background: linear-gradient(145deg, #5dd75d, #d4f7b7);
+  }
+
+  #generateComic:active {
+    background: linear-gradient(145deg, #3b8c3b, #7cb77c ); /* Darker pressed color */
+    box-shadow: inset 5px 5px 15px #3a7d44, inset -5px -5px 15px #c4f4a3; /* Inset shadow for pressed look */
+    transform: translateY(2px); /* Moves button down slightly */
+  }
+
+
+
+
+
+
+/* Projects Section */
+section.Projects {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the section */
+    border: 8px solid #000;
+    border-radius: 15px;
+    box-shadow: 4px 4px 0px #FF5733, 8px 8px 2px #0066FF; /* Comic-style shadow effect */
+    padding: 20px;
+    background-color: lightgray;
+    margin-top: 10px;
+}
+
+.Projects h2 {
+    font-size: 2em; /* Adjust the font size as necessary */
+    margin-bottom: 10px; /* Space between heading and paragraph */
+    font-family: 'BatmanForeverAlternate', sans-serif;  
+}
+
+.projects-section {
+    max-width: 600px; /* Limit the width for readability */
+    margin-bottom: 20px; /* Space between paragraph and list */
+}
+
+#projects {
+    display: flex; /* Use flexbox to layout items */
+    justify-content: space-around; /* Evenly space items across the page */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Make the list take full width */
+}
+
+#projects li {
+    flex: 1; /* Allow each item to grow equally */
+    text-align: center; /* Center text within list items */
+    margin: 0 10px; /* Space between items */
+    
+}
+
+#projects a {
+    text-decoration: underline; /* Remove underline */
+    color: black; /* Bootstrap primary color or adjust to your theme */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+#projects a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+/* Contact Section*/
+.Contact {
+    text-align: center; /* Centers the text within the section */
+    margin: 20px auto; /* Adds margin to the top and bottom, auto for left and right to center */
+    max-width: 600px; /* Optional: Set a max-width to limit the width of the section */
+    background-color: #f9f9f9; /* Optional: Background color for the section */
+    padding: 20px; /* Optional: Padding for better spacing within the section */
+    border: 2px solid #007BFF; /* Optional: Add a border if needed */
+    border-radius: 5px; /* Optional: Rounded corners for the border */
+    background-color: lightgray;
+}
+
+.Contact ul.contact-items {
+    list-style-type: none !important; /* Forces removal of bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.contact-items {
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.Contact ul {
+    list-style-type: none;
+}
+
+.Contact .contact-items li {
+    margin: 10px 0; /* Adds space between list items */
+    list-style: none; /* Removes bullet points */
+}
+
