@@ -1,13 +1,13 @@
 // Array of comic image URLs
 const comicImages = [
-    "Batman_thelonghalloween.jpg",
-    "Amazing_Spider-Man_Vol_1_361_Second_Printing_Variant.webp",
-    "clean.jpg", 
-    "Venom_Lethal_Protector_no_1.jpg",
-    "Nightwing_Vol_2_1.webp", 
-    "Amazing_Spider-Man_Vol_1_136.webp",
-    "Nightwing_Vol_2_16.webp ",
-    "51E7xBA9yNL._AC_UF1000,1000_QL80_.jpg"
+    "images/Batman_thelonghalloween.jpg",
+    "images/Amazing_Spider-Man_Vol_1_361_Second_Printing_Variant.webp",
+    "images/clean.jpg", 
+    "images/Venom_Lethal_Protector_no_1.jpg",
+    "images/Nightwing_Vol_2_1.webp", 
+    "images/Amazing_Spider-Man_Vol_1_136.webp",
+    "images/Nightwing_Vol_2_16.webp ",
+    "images/51E7xBA9yNL._AC_UF1000,1000_QL80_.jpg"
 ];
 
 // Function to generate a random comic
